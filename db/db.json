@@ -35,6 +35,16 @@
       "mob": "9234567890",
       "securityQuestion": "What is yout favorite animal?",
       "securityAnswer": "Billi"
+    },
+    {
+      "id": "User-0b04173a-d487-46f3-942d-b100f660da2c",
+      "firstname": "ankitaa",
+      "lastname": "panju",
+      "email": "anki@gmail.com",
+      "password": "qwerqwer",
+      "mob": "8989898989",
+      "securityQuestion": "What is yout favorite animal?",
+      "securityAnswer": "monkey"
     }
   ],
   "category": [
