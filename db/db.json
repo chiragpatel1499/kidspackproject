@@ -1,30 +1,43 @@
 {
   "user": [
     {
-      "id":"Auto Generate",
-      "name":"Keyur Khant",
-      "email":"kp@cybage.com",
-      "password":"PaSSword",
-      "mobile":"9016243435",
-      "interest": ["cricket","football","languages"],
-      "result":[
+      "id": "Auto Generate",
+      "name": "Keyur Khant",
+      "email": "kp@cybage.com",
+      "password": "PaSSword",
+      "mobile": "9016243435",
+      "interest": [
+        "cricket",
+        "football",
+        "languages"
+      ],
+      "result": [
         {
-          "categoryid":"12444", 
-          "marks":"24",
+          "categoryid": "12444",
+          "marks": "24",
           "timer": "In seconds",
-          "timestamp":"12 DEC 2020"
+          "timestamp": "12 DEC 2020"
         },
         {
-          "categoryid":"44", 
-          "marks":"21",
+          "categoryid": "44",
+          "marks": "21",
           "timer": "In seconds",
-          "timestamp":"15 DEC 2020"
+          "timestamp": "15 DEC 2020"
         }
       ]
+    },
+    {
+      "id": "User-7052021d-992a-4c86-a723-d54fb39bdbf4",
+      "firstname": "Kushal",
+      "lastname": "Ahuja",
+      "email": "kushal@cybage.com",
+      "password": "asdfasdf",
+      "mob": "9234567890",
+      "securityQuestion": "What is yout favorite animal?",
+      "securityAnswer": "Billi"
     }
   ],
-
-  "category":[
+  "category": [
     {
       "categoryname": "Cricket",
       "categoryid": "1234"
@@ -34,36 +47,41 @@
       "categoryid": "1234"
     }
   ],
-
-  "questions":[
+  "questions": [
     {
       "categoryid": "",
       "questionid": "",
       "question": "Who is PM of India?",
-      "options": ["a","b","c","d"],
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
       "answer": "a"
     },
     {
       "categoryid": "",
       "questionid": "",
       "question": "Who is PM of India?",
-      "options": ["a","b","c","d"],
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
       "answer": "a",
-      "imgurl": "D:/IMAGE/img.jpg (If Images are there then added dynamically by JS)" 
+      "imgurl": "D:/IMAGE/img.jpg (If Images are there then added dynamically by JS)"
     }
   ],
-
   "admin": [
     {
-      "id":"Auto Generate",
-      "name":"Keyur Khant",
-      "email":"kp@cybage.com",
-      "password":"PaSSword",
-      "mobile":"9016243435",
-      "lastLogin":"Timestamp of last login"
+      "id": "Auto Generate",
+      "name": "Keyur Khant",
+      "email": "kp@cybage.com",
+      "password": "PaSSword",
+      "mobile": "9016243435",
+      "lastLogin": "Timestamp of last login"
     }
   ]
-
-
 }
-
