@@ -1,0 +1,69 @@
+{
+  "user": [
+    {
+      "id":"Auto Generate",
+      "name":"Keyur Khant",
+      "email":"kp@cybage.com",
+      "password":"PaSSword",
+      "mobile":"9016243435",
+      "interest": ["cricket","football","languages"],
+      "result":[
+        {
+          "categoryid":"12444", 
+          "marks":"24",
+          "timer": "In seconds",
+          "timestamp":"12 DEC 2020"
+        },
+        {
+          "categoryid":"44", 
+          "marks":"21",
+          "timer": "In seconds",
+          "timestamp":"15 DEC 2020"
+        }
+      ]
+    }
+  ],
+
+  "category":[
+    {
+      "categoryname": "Cricket",
+      "categoryid": "1234"
+    },
+    {
+      "categoryname": "Cricket",
+      "categoryid": "1234"
+    }
+  ],
+
+  "questions":[
+    {
+      "categoryid": "",
+      "questionid": "",
+      "question": "Who is PM of India?",
+      "options": ["a","b","c","d"],
+      "answer": "a"
+    },
+    {
+      "categoryid": "",
+      "questionid": "",
+      "question": "Who is PM of India?",
+      "options": ["a","b","c","d"],
+      "answer": "a",
+      "imgurl": "D:/IMAGE/img.jpg (If Images are there then added dynamically by JS)" 
+    }
+  ],
+
+  "admin": [
+    {
+      "id":"Auto Generate",
+      "name":"Keyur Khant",
+      "email":"kp@cybage.com",
+      "password":"PaSSword",
+      "mobile":"9016243435",
+      "lastLogin":"Timestamp of last login"
+    }
+  ]
+
+
+}
+
