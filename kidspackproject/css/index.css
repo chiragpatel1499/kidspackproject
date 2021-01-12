@@ -59,6 +59,28 @@
     margin-bottom: auto;
 }
 
+.categorytitle{
+    text-decoration: none;
+    color: white;
+}
+
+.categorytitle:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.categoryimage{
+    height: 300px;
+    width: auto;
+}
+
+.close{
+    background-color: lightgrey;
+    border: none;
+    width: 40px;
+    height: 30px;
+}
+
 .catCard{
     border-radius: 8px;
     overflow: hidden;
