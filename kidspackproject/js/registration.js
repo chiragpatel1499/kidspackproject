@@ -46,7 +46,7 @@ $(document).ready(function () {
             var flag = (await isUserExist(email));
             console.log(flag);
             if (!flag) {
-                let userdata = new userData(userId, firstname, lastname, email, password, mob, securityque, securityans);
+                let userdata = new userData(userId, firstname, lastname, email, password, mob, securityque, securityans.toLowerCase());
                 addUser(userdata);
 
 
