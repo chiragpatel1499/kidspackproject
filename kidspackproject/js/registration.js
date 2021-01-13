@@ -33,7 +33,7 @@ $(document).ready(function () {
         var gender = $("input[name=gender]:checked").val();
         var email = $("#email").val();
         var mob = $("#mobile").val();
-        var password = $("#password").val();
+        var password =md5($("#password").val());
         var securityque = $('#securityque').val();
         var securityans = $('#securityans').val();
 

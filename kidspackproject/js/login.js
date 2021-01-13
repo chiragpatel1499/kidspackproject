@@ -14,7 +14,7 @@ $(document).ready(function() {
   $("#loginForm").on("submit", async function(ev) {
     ev.preventDefault();
     var email = $("#email").val();
-    var password = $("#password").val();
+    var password = md5($("#password").val());
 
     var selected_Id = $('input[name="role"]:checked').attr("id");
     // console.log(selected_Id);
