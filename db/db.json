@@ -1,97 +1,686 @@
 {
   "user": [
     {
-      "id": "Auto Generate",
-      "name": "Keyur Khant",
-      "email": "kp@cybage.com",
-      "password": "PaSSword",
-      "mobile": "9016243435",
-      "interest": [
-        "cricket",
-        "football",
-        "languages"
-      ],
-      "result": [
-        {
-          "categoryid": "12444",
-          "marks": "24",
-          "timer": "In seconds",
-          "timestamp": "12 DEC 2020"
-        },
-        {
-          "categoryid": "44",
-          "marks": "21",
-          "timer": "In seconds",
-          "timestamp": "15 DEC 2020"
-        }
-      ]
-    },
-    {
-      "id": "User-7052021d-992a-4c86-a723-d54fb39bdbf4",
-      "firstname": "Kushal",
-      "lastname": "Ahuja",
-      "email": "kushal@cybage.com",
-      "password": "asdfasdf",
-      "mob": "9234567890",
-      "securityQuestion": "What is yout favorite animal?",
-      "securityAnswer": "Billi"
-    },
-    {
-      "id": "User-0b04173a-d487-46f3-942d-b100f660da2c",
-      "firstname": "ankitaa",
-      "lastname": "panju",
-      "email": "anki@gmail.com",
-      "password": "qwerqwer",
-      "mob": "8989898989",
-      "securityQuestion": "What is yout favorite animal?",
-      "securityAnswer": "monkey"
-    },
-    {
-      "id": "User-09266160-8ebc-49fa-9aa4-20b3cde0c223",
-      "firstname": "Isha",
-      "lastname": "Kotharu",
-      "email": "ishakotharu@cybage.com",
-      "password": "7d17ea0193dc5205b46df04daef0c907",
-      "mob": "9876543210",
-      "securityQuestion": "What is yout favorite animal?",
-      "securityAnswer": "ghodo"
+      "id": "User-793e8071-5de9-4cf2-8174-ba64b87afc2f",
+      "firstname": "darshan",
+      "lastname": "ajudiya",
+      "gender": "Male",
+      "email": "darshana@cybage.com",
+      "password": "22d7fe8c185003c98f97e5d6ced420c7",
+      "mob": "6776678790",
+      "securityQuestion": "What is your favorite animal?",
+      "securityAnswer": "panda"
     }
   ],
   "category": [
     {
-      "categoryname": "Cricket",
-      "categoryid": "1234"
+      "id": "category-f2daff3c-a2eb-40ba-ab1c-a60717a8b2af",
+      "categoryname": "Science",
+      "categorydescription": "Science is integral part of children's curriculum.Science helps children develop key life skills, including an ability to communicate, remain organized and focused, and even form their own opinions based on observation. Science also helps children develop their senses and overall awareness."
     },
     {
-      "categoryname": "Cricket",
-      "categoryid": "1234"
+      "id": "category-1f72a771-bc8f-419b-bf08-aa0e685bbb33",
+      "categoryname": "Literature",
+      "categorydescription": "Reading books aloud to children stimulates their imagination and expands their understanding of the world. It helps them develop language and listening skills and prepares them to understand the written word.Even after children learn to read by themselves, it's still important for you to read aloud together."
+    },
+    {
+      "id": "category-d44d7caf-bae9-41dc-b1e6-ffff269efb36",
+      "categoryname": "General Knowledge",
+      "categorydescription": "General knowledge is something that really helps us to grow both on personal as well as academic level. It narrows our sense of perceiving the world, understands, and analyzes the situations better as one would without proper knowledge.General knowledge opens gateways our thinking, and take it to a level from where the whole world seems to be a better place."
+    },
+    {
+      "id": "category-d44d7caf-bae9-41dc-b1e6-ffff269efb36",
+      "categoryname": "Numbers",
+      "categorydescription": "Numeracy is different than Mathematics.It is a body of knowledge and numeracy is the ability to use this to reason and apply Mathematics knowledge to everyday life.It is not the quantity of Math knowledge that one has that is important,it is the ability to “see” math and use it to function in day to day life."
+    },
+    {
+      "id": "category-d44d7caf-bae9-41dc-b1e6-ffff269efb36",
+      "categoryname": "Sports",
+      "categorydescription": "Sports experiences help building positive self- esteem in children.In addition, participating in sports can be a helpful way of reducing stress and increasing feelings of physical and mental well-being, as well as fighting against juvenile delinquency, conflict and aggressive outbursts."
+    },
+    {
+      "id": "category-d44d7caf-bae9-41dc-b1e6-ffff269efb36",
+      "categoryname": "Entertainment",
+      "categorydescription": "Cartoons are essential part of every childhood. They are, certainly, the most popular entertainment for children, but also much more than that. With the help of cartoons kids learn about the world around us, about new emotions, life issues and other important things."
     }
   ],
   "questions": [
     {
-      "categoryid": "",
-      "questionid": "",
-      "question": "Who is PM of India?",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d"
+      "id": "questions-809fa56a-ee54-4c63-b006-35b94009f396",
+      "category": "Science",
+      "question": "Which is a large blood vessel that carries blood away from the heart?",
+      "options[]": [
+        "Vein",
+        "Artery",
+        "Capillary",
+        " Nerve"
       ],
-      "answer": "a"
+      "answer": "Vein",
+      "questionImage": "data:image/jpeg;base64,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"
     },
     {
-      "categoryid": "",
-      "questionid": "",
-      "question": "Who is PM of India?",
-      "options": [
-        "a",
-        "b",
-        "c",
-        "d"
+      "id": "questions-a1913f6e-575f-4659-8e3a-defcb4dd473d",
+      "category": "Science",
+      "question": "Which of the following is not a member of the vitamin B complex?",
+      "options[]": [
+        "Thiamine",
+        "Riboflavin",
+        "Folic acid",
+        "Ascorbic acid"
       ],
-      "answer": "a",
-      "imgurl": "D:/IMAGE/img.jpg (If Images are there then added dynamically by JS)"
+      "answer": "Ascorbic acid"
+    },
+    {
+      "id": "questions-b2e09eda-87b7-4790-8665-a2ec688358c7",
+      "category": "Science",
+      "question": "What makes a reptile a reptile?",
+      "options[]": [
+        "Cold blooded",
+        "Warm Blooded",
+        " Non-Hearing",
+        "Egg-laying"
+      ],
+      "answer": "Egg-laying"
+    },
+    {
+      "id": "questions-86cd90e8-b445-4101-9fc5-c3a0e819b7b2",
+      "category": "Science",
+      "question": "Which of the following is an air-borne disease?",
+      "options[]": [
+        "Measles",
+        "Typhoid",
+        "Pink eye",
+        "None of the above"
+      ],
+      "answer": "Measles"
+    },
+    {
+      "id": "questions-85dafc54-ca77-4d2b-95b3-15b4158ccd25",
+      "category": "Science",
+      "question": "Which organ of the body produces the fluid known as bile?",
+      "options[]": [
+        "Liver",
+        "Pancreas",
+        "Gall bladder",
+        "Kidney"
+      ],
+      "answer": "Liver"
+    },
+    {
+      "id": "questions-199dd755-8a36-4a15-bf1a-fcd38698ecfd",
+      "category": "Science",
+      "question": "Which of the following is used in pencils?",
+      "options[]": [
+        "Graphite",
+        "Silicon",
+        "Phosphorous",
+        "Charcoal"
+      ],
+      "answer": "Graphite"
+    },
+    {
+      "id": "questions-6073d93a-7a67-4c3f-a93d-5e62a1923a57",
+      "category": "Science",
+      "question": "Which of the following metals forms an amalgam with other metals?",
+      "options[]": [
+        "Tin",
+        "Mercury",
+        "Lead",
+        "Zinc"
+      ],
+      "answer": "Mercury"
+    },
+    {
+      "id": "questions-7be437bc-501f-4646-8e9a-b00de3683c7f",
+      "category": "Science",
+      "question": "The gas usually filled in the electric bulb is?",
+      "options[]": [
+        "nitrogen",
+        "hydrogen",
+        "carbon dioxide",
+        "oxygen"
+      ],
+      "answer": "nitrogen"
+    },
+    {
+      "id": "questions-884f3de6-50d5-4ecb-8cd5-4b452cf693ad",
+      "category": "Science",
+      "question": "Which planet looks reddish in the night sky?",
+      "options[]": [
+        "Jupiter",
+        "Saturn",
+        "Mars",
+        " Mercury"
+      ],
+      "answer": "Mars"
+    },
+    {
+      "id": "questions-49a934fd-0d99-418e-b17d-3d6e5bd3098b",
+      "category": "Science",
+      "question": "An astronaut in outer space will observe the sky as?",
+      "options[]": [
+        " White",
+        "Black",
+        "Blue",
+        "Red"
+      ],
+      "answer": "Black"
+    },
+    {
+      "id": "questions-b591242e-c70d-4b01-91a1-ad347e816d9b",
+      "category": "Literature",
+      "question": "How many sides are there in a triangle?",
+      "options[]": [
+        "Three",
+        "Four",
+        "Five ",
+        "Six"
+      ],
+      "answer": "Three"
+    },
+    {
+      "id": "questions-4fe85728-dd58-4abe-98b5-4179c38aad83",
+      "category": "Literature",
+      "question": "In which direction does the sun rise?",
+      "options[]": [
+        "West",
+        "East",
+        "North",
+        "South"
+      ],
+      "answer": "East"
+    },
+    {
+      "id": "questions-cba54e1a-7d54-4f7d-a7ef-17c61457387d",
+      "category": "Literature",
+      "question": "What is a baby frog called?",
+      "options[]": [
+        "Cub",
+        "Tadpole",
+        "Kitten",
+        "None"
+      ],
+      "answer": "Tadpole"
+    },
+    {
+      "id": "questions-3088ec76-23d8-4ea7-bf2b-124a9c4f3390",
+      "category": "Literature",
+      "question": "Which is the first Harry Potter book?",
+      "options[]": [
+        "HP and the Goblet of Fire",
+        "HP and the Philosopher’s Stone",
+        " HP and the Chamber of Secrets",
+        "HP and the God of small Things"
+      ],
+      "answer": "HP and the Philosopher’s Stone"
+    },
+    {
+      "id": "questions-1833b54f-afc1-40d6-b758-f57aee9ea62f",
+      "category": "Literature",
+      "question": "How many vowels are there in the English alphabet?",
+      "options[]": [
+        "4",
+        "5",
+        "9",
+        "None"
+      ],
+      "answer": "5"
+    },
+    {
+      "id": "questions-d266b760-fa6e-4a3a-9b77-0b76a901abe0",
+      "category": "Literature",
+      "question": "How many vowels are there in the given word? Cheerful",
+      "options[]": [
+        "4",
+        "5",
+        "3",
+        "None"
+      ],
+      "answer": "3"
+    },
+    {
+      "id": "questions-d0a81013-63c4-4b05-935a-cfcafe0a6b1c",
+      "category": "Literature",
+      "question": "Which sentence uses a comma correctly?",
+      "options[]": [
+        "However I am very good at math.",
+        "However I, am very, good at math.",
+        "However, I am very good at math.",
+        "However I am very good, at math."
+      ],
+      "answer": "However, I am very good at math."
+    },
+    {
+      "id": "questions-172ed67a-c5eb-4a9e-8c11-e09b9785c741",
+      "category": "Literature",
+      "question": "Which is interrogative pronoun in \"To whom she was talking about?\"",
+      "options[]": [
+        "was",
+        "she",
+        "to",
+        "whom"
+      ],
+      "answer": "whom"
+    },
+    {
+      "id": "questions-2f7feab2-2201-4028-bf9d-4e5a3fec3b4a",
+      "category": "Literature",
+      "question": "Which is interrogative pronoun in \"Whom can I talk? If not her.\"",
+      "options[]": [
+        "whom",
+        "I",
+        "can",
+        "her"
+      ],
+      "answer": "whom"
+    },
+    {
+      "id": "questions-2875ef77-6fb7-4c90-8f92-c781685776fb",
+      "category": "Literature",
+      "question": "He ___________ around the filthy room in distaste.",
+      "options[]": [
+        "looked ",
+        "looking ",
+        "am looks ",
+        "is looks"
+      ],
+      "answer": "looked "
+    },
+    {
+      "id": "questions-2f2ccdd6-18e5-4fcd-97d3-804321e4a494",
+      "category": "General Knowledge",
+      "question": " The ‘Lady with the Lamp’ was the name given to?",
+      "options[]": [
+        "Vijayalakshmi Pandit ",
+        "Queen Elizabeth ",
+        "Florence Nightingale ",
+        "Princess Diana"
+      ],
+      "answer": "Florence Nightingale "
+    },
+    {
+      "id": "questions-4e3fb205-342f-492d-90d5-b2a75d98cb3a",
+      "category": "General Knowledge",
+      "question": "The biggest part of the brain is",
+      "options[]": [
+        "Spinal cord",
+        "Cerebellum",
+        "Cerebrum ",
+        "Brain Stem"
+      ],
+      "answer": "Cerebrum "
+    },
+    {
+      "id": "questions-c5ed5b4d-4ef5-48a2-9f46-0c7967262817",
+      "category": "General Knowledge",
+      "question": "NASA’s most famous space telescope goes by the name?",
+      "options[]": [
+        "Muble Satellite Telescope ",
+        "Hubble Space Telescope ",
+        "Humble Space Telescope",
+        "Galaxy Satellite Telescope"
+      ],
+      "answer": "Hubble Space Telescope "
+    },
+    {
+      "id": "questions-ca35c523-f24e-4f3d-a9ea-1afe080910d5",
+      "category": "General Knowledge",
+      "question": "This scientist is well known for his theory of relativity. Who is he?",
+      "options[]": [
+        "Thomas Alva Edison ",
+        "Albert Einstein ",
+        " Marconi",
+        " James Watt  Answer"
+      ],
+      "answer": "Albert Einstein "
+    },
+    {
+      "id": "questions-5ec519de-e2cb-4a63-b551-8e3d70de179a",
+      "category": "General Knowledge",
+      "question": "In which country are the cities Ankara and Istanbul located?",
+      "options[]": [
+        "Afghanistan",
+        "Turkey",
+        " Pakisthan",
+        " Iraq"
+      ],
+      "answer": "Turkey"
+    },
+    {
+      "id": "questions-a6f3654f-47d2-491a-bea8-21af2e403090",
+      "category": "Numbers",
+      "question": "What is the next prime number after (3)?",
+      "options[]": [
+        "5",
+        "7",
+        "9",
+        "8"
+      ],
+      "answer": "5"
+    },
+    {
+      "id": "questions-62b9e2f3-bd63-4442-b968-1162310e7b11",
+      "category": "Numbers",
+      "question": "What is the perimeter of a circle known as?",
+      "options[]": [
+        "Area",
+        "Circumference",
+        "Both",
+        "None"
+      ],
+      "answer": "Circumference"
+    },
+    {
+      "id": "questions-2606a243-3418-470c-be45-93fa67222653",
+      "category": "Numbers",
+      "question": "What is the square root of (81)?",
+      "options[]": [
+        "18",
+        "9",
+        "11",
+        "6561"
+      ],
+      "answer": "9"
+    },
+    {
+      "id": "questions-8900cee6-1220-4a53-9380-e5ed4af889b7",
+      "category": "Numbers",
+      "question": "What is 7% equal to?",
+      "options[]": [
+        "0.007  ",
+        "0.07 ",
+        "0.7  ",
+        "7"
+      ],
+      "answer": "0.07 "
+    },
+    {
+      "id": "questions-a2ff5f42-3029-40fb-b9b5-b258909c75b6",
+      "category": "Numbers",
+      "question": "I have 7 in the ones place. I am< 80 but >than 70? What am I",
+      "options[]": [
+        "71",
+        "73",
+        "75",
+        "77"
+      ],
+      "answer": "77"
+    },
+    {
+      "id": "questions-b771d29c-0954-432c-9cbf-b93f9fb14b6b",
+      "category": "Sports",
+      "question": "The terms Volley, Smash are related to which among the following sports?",
+      "options[]": [
+        "Volleyball ",
+        "Lawn Tennis ",
+        "Table Tennis",
+        "Badminton"
+      ],
+      "answer": "Lawn Tennis "
+    },
+    {
+      "id": "questions-dd3af54e-1957-4d7e-a0de-a3a333e60d78",
+      "category": "Sports",
+      "question": "Which of the following games were previously called ‘British Empire Games’ ?",
+      "options[]": [
+        "East Asian Games ",
+        "Southeast Asian Games",
+        "Olympic Games",
+        "Commonwealth Games"
+      ],
+      "answer": "Commonwealth Games"
+    },
+    {
+      "id": "questions-29010bae-cafa-4b43-8bba-b1af5ac84b5e",
+      "category": "Sports",
+      "question": "Which among the following country is the host of 2018 Commonwealth Games?",
+      "options[]": [
+        "Canada",
+        " England",
+        " Australia",
+        "India"
+      ],
+      "answer": " Australia"
+    },
+    {
+      "id": "questions-f76c5ebf-a907-4103-9486-dd791ed8d07d",
+      "category": "Sports",
+      "question": "When was the first Winter Olympics held?",
+      "options[]": [
+        "1899",
+        "1905",
+        "1924",
+        "1915"
+      ],
+      "answer": "1924"
+    },
+    {
+      "id": "questions-e03161b4-f9e6-4c64-b98f-878844140c99",
+      "category": "Sports",
+      "question": "Who is known as the Flying Sikh of India?",
+      "options[]": [
+        "Usain Bolt",
+        "Milkha Singh ",
+        "Sandeep Singh",
+        "Navjot Singh"
+      ],
+      "answer": "Milkha Singh "
+    },
+    {
+      "id": "questions-75c16223-5be9-4429-800d-f794f487666c",
+      "category": "General Knowledge",
+      "question": "Of the following diseases which one is caused by insect bite?",
+      "options[]": [
+        "Dengue ",
+        "Scurvy ",
+        "Pneumonia",
+        "Asthma"
+      ],
+      "answer": "Dengue "
+    },
+    {
+      "id": "questions-67aa2f29-03e0-48e5-824b-faf899e80236",
+      "category": "General Knowledge",
+      "question": "Which organ of the human body does the Alzheimer’s disease affect?",
+      "options[]": [
+        "Ear",
+        "Brain",
+        "Eye",
+        "Stomach"
+      ],
+      "answer": "Brain"
+    },
+    {
+      "id": "questions-71625ea4-b773-4290-8e69-a4fa68ad24ca",
+      "category": "General Knowledge",
+      "question": "Which of the following flight infection in the body?",
+      "options[]": [
+        "RBC ",
+        "WBC ",
+        "Blood Plasma ",
+        "Heamoglobin"
+      ],
+      "answer": "WBC "
+    },
+    {
+      "id": "questions-28aaf7c3-c2dd-4502-9eab-0d990c7156f7",
+      "category": "General Knowledge",
+      "question": "Anthophobia is fear of which of the following?",
+      "options[]": [
+        "Boss ",
+        "Fire",
+        "Flowers ",
+        "Dogs"
+      ],
+      "answer": "Flowers "
+    },
+    {
+      "id": "questions-db6461b9-663b-457f-984b-7a3cbed68cae",
+      "category": "General Knowledge",
+      "question": "Deficiency of which of the following vitamins causes the disease of slow blood clotting?",
+      "options[]": [
+        "Vitamin C ",
+        "Vitamin D ",
+        "Vitamin E ",
+        "Vitamin K"
+      ],
+      "answer": "Vitamin K"
+    },
+    {
+      "id": "questions-b7b7177d-4ced-499b-bc0f-aa1cfb09ad20",
+      "category": "Numbers",
+      "question": "In binary code, the number 7 is written by?",
+      "options[]": [
+        "110",
+        "111",
+        "101",
+        "100"
+      ],
+      "answer": "111"
+    },
+    {
+      "id": "questions-02fc72f7-ecf8-45ec-9a91-255c1b9cd7cc",
+      "category": "Numbers",
+      "question": "How many sides does a nonagon have?",
+      "options[]": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ],
+      "answer": "9"
+    },
+    {
+      "id": "questions-580ead4a-e078-4d7f-88b0-a2eecd76fecb",
+      "category": "Numbers",
+      "question": "True or false? -2 is an integer.",
+      "options[]": [
+        "True",
+        "False",
+        "Undefined",
+        "None"
+      ],
+      "answer": "True"
+    },
+    {
+      "id": "questions-be293331-6604-4c25-9fa2-4085b9e49185",
+      "category": "Numbers",
+      "question": "What comes after a million, billion and trillion?",
+      "options[]": [
+        "MultiMillion",
+        "Forthillion",
+        "Quadrillion",
+        "None"
+      ],
+      "answer": "Quadrillion"
+    },
+    {
+      "id": "questions-22676ba4-83b5-45ba-860b-d5125c1d9c5a",
+      "category": "Numbers",
+      "question": "How much is 5 tens and 3 ones?",
+      "options[]": [
+        "503  ",
+        "53  ",
+        "5300  ",
+        "530"
+      ],
+      "answer": "53  "
+    },
+    {
+      "id": "questions-93273f04-5f15-49f1-8983-c670fac6f8bf",
+      "category": "Sports",
+      "question": "Who won the first T20 World Cup?",
+      "options[]": [
+        "Sri Lanka ",
+        "USA ",
+        "India ",
+        "Canada"
+      ],
+      "answer": "India "
+    },
+    {
+      "id": "questions-d515f225-f8e3-4356-867b-8d4203e68437",
+      "category": "Sports",
+      "question": "The term“Googly” is associated with ?",
+      "options[]": [
+        "Cricket",
+        "Badminton",
+        "Hockey",
+        "None"
+      ],
+      "answer": "Cricket"
+    },
+    {
+      "id": "questions-32d8c235-5446-48f3-92fd-7cc1eacffcea",
+      "category": "Sports",
+      "question": " Who was adjudicated as the man of the series in the tournament In 2011World Cup ?",
+      "options[]": [
+        "Rahul Dravid",
+        "Zaheer Khan",
+        "Yuvaraj Singh",
+        "Sachin Tendulkar"
+      ],
+      "answer": "Yuvaraj Singh"
+    },
+    {
+      "id": "questions-aff9d854-1e36-41c5-a70c-6b5618bf90fb",
+      "category": "Sports",
+      "question": "Vishwanath Anand is associated with?",
+      "options[]": [
+        "Chess",
+        "Volleyball",
+        "Hockey",
+        "Carrom"
+      ],
+      "answer": "Chess"
+    },
+    {
+      "id": "questions-bc7f1d94-a92b-4585-adfd-7b906df15373",
+      "category": "Sports",
+      "question": "Kunjarani Devi is associated with ?",
+      "options[]": [
+        "Cricket",
+        "Hockey",
+        "Football",
+        "Weight Lifting"
+      ],
+      "answer": "Weight Lifting"
+    },
+    {
+      "id": "questions-b6ebeead-f73e-48ed-840a-dca527c16e55",
+      "category": "Entertainment",
+      "question": "In which year was Bugs Bunny born?",
+      "options[]": [
+        "1938",
+        "1948",
+        "1955",
+        "None"
+      ],
+      "answer": "1938"
+    },
+    {
+      "id": "questions-02c84026-7ca0-48a3-85fc-9b98f0eba485",
+      "category": "Entertainment",
+      "question": "What is the middle name of Donald Duck?",
+      "options[]": [
+        "Henry",
+        "Kennedy",
+        "Fauntleroy",
+        "Burma"
+      ],
+      "answer": "Fauntleroy"
+    },
+    {
+      "id": "questions-277f2d70-554d-4a30-a2d8-52c4bec50b27",
+      "category": "Entertainment",
+      "question": "Who was all time partner of Oswald?",
+      "options[]": [
+        "Vinnie",
+        "Minnie",
+        "Daisy",
+        "Henry"
+      ],
+      "answer": "Vinnie"
     }
   ],
   "admin": [
@@ -99,9 +688,22 @@
       "id": "Auto Generate",
       "name": "Keyur Khant",
       "email": "kp@cybage.com",
-      "password": "PaSSword",
+      "password": "0192023a7bbd73250516f069df18b500",
       "mobile": "9016243435",
       "lastLogin": "Timestamp of last login"
+    }
+  ],
+  "quizresult": [
+    {
+      "userid": "User-793e8071-5de9-4cf2-8174-ba64b87afc2f",
+      "email": "darshana@cybage.com",
+      "id": "quizresult-9e9e026f-1b3c-4e10-af80-89494d305669",
+      "categoryname": "Science",
+      "score": "6",
+      "totalquestions": "10",
+      "correct": "6",
+      "totaltime": "03:03",
+      "timestamp": "Mon Jan 18 2021 18:10:40 GMT+0530 (India Standard Time)"
     }
   ]
 }
