@@ -41,21 +41,23 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <!-- md5 js file from cloudflare -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.5.0/js/md5.min.js"></script>
 
     <!-- custom stylesheet -->
 
-    <link href="../css/login.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.5.0/js/md5.min.js"></script>
     <script src="../js/sessionhandle.js"></script>
+    <script>
+      if (checkSession()) {
+        if (localStorage.getItem("role") == "admin") {
+          $(location).attr("href", "adminhome.html");
+        } else {
+          $(location).attr("href", "userhomepage.html");
+        }
+      }
+    </script>
+    <link href="../css/login.css" rel="stylesheet" />
     <script src="../js/login.js"></script>
-
-    <!-- jquery validate library -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
-      integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
-      crossorigin="anonymous"
-    ></script>
-    
   </head>
 
   <body>
@@ -65,14 +67,14 @@
       class="navbar navbar-expand-lg text-uppercase navbar-dark bg-dark py-3 myNav"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="../assets/img/LOGO.png" style="height:8vh;"
+        <a class="navbar-brand" href="index.html"
+          ><img src="../assets/img/LOGO.png" style="height: 8vh"
         /></a>
       </div>
     </nav>
 
-    <div class="container">
-      <div class=" container-md container-sm my-5" id="login">
+    <div class="container main">
+      <div class="container-md container-sm my-5" id="login">
         <!-- Contact Section Heading-->
         <h2 class="heading-label text-center text-uppercase mb-3">Sign In</h2>
 
@@ -107,7 +109,7 @@
                 <label for="passwordlgn">Password</label>
               </div>
               <div class="form-group mb-2 gender-radio" id="role">
-                <label for="gender">Role:&nbsp; </label>
+                <label for="role">Role:&nbsp; </label>
                 <input
                   class="form-check-input"
                   type="radio"
@@ -142,7 +144,7 @@
             <div class="mt-2">
               <div id="forgotpassword">
                 <label>Forgot Password?</label>
-                <a class="click-here-link" href="resetPassword.html"
+                <a class="click-here-link" href="resetpassword.html"
                   >click here</a
                 >
               </div>
