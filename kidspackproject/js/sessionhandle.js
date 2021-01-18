@@ -1,37 +1,39 @@
+/* eslint-disable max-len */
+/* eslint-disable no-unused-vars */
+/* eslint-disable require-jsdoc */
+
 function createSession(id, email, role) {
-    localStorage.setItem('userid', id);
-    localStorage.setItem('email', email);
-    localStorage.setItem('role', role);
+  localStorage.setItem('userid', id);
+  localStorage.setItem('email', email);
+  localStorage.setItem('role', role);
 }
 
 function deleteSession() {
-    localStorage.clear();
+  localStorage.clear();
 }
 
 
 function checkSession() {
-    let sessionuserid = localStorage.getItem('userid');
-    let sessionEmail = localStorage.getItem('email');
-    console.log(sessionEmail);
+  const sessionuserid = localStorage.getItem('userid');
+  const sessionEmail = localStorage.getItem('email');
 
-    if (sessionuserid == null && sessionEmail == null) {
-        console.log("you are logged out! to continue log in again");
-        return false;
-    }
-    else {
-        return true;
-    }
-
+  if (sessionuserid == null && sessionEmail == null) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 function getUserSessionData() {
-    if (checkSession()) {
-        let sessionuserid = localStorage.getItem('userid');
-        let sessionEmail = localStorage.getItem('email');
-        let sessionrole = localStorage.getItem('role');
+  if (checkSession()) {
+    const sessionuserid = localStorage.getItem('userid');
+    const sessionEmail = localStorage.getItem('email');
+    const sessionrole = localStorage.getItem('role');
 
-        return { userid: sessionuserid, useremail: sessionEmail, userrole: sessionrole };
-    }
+    return {userid: sessionuserid, useremail: sessionEmail, userrole: sessionrole};
+  }
 
-    return null;
+  return null;
 }
+
+
