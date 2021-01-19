@@ -89,7 +89,7 @@ $(document).ready(async function() {
 
   $('#question-add-form').on('submit', async function(ev) {
     ev.preventDefault();
-    alert('hello');
+    //alert('hello');
     let category = selectedCategory2;
     if (selectedCategory2==null) {
       $('#error-msg-add').text('please select category first!!');
@@ -206,38 +206,6 @@ async function getQuestionList() {
   return questionList;
 }
 
-// Fetch Qestion Detail By ID in update
-// async function getQuestionDetailByID(id){
-//     let question= await $.ajax({
-//         method: "GET",
-//         url: 'http://localhost:3000/questions/'+id,
-//         success: function (x) {
-//         //     let optionList=[];
-//         //     let optionArray=x['options[]']
-//         //     for(let optionArray1 in optionArray){
-//         //         optionList.push(optionArray[optionArray1]);
-//         //     }
-//         //     alert(`Select Category : <select name="category" id="category2">
-//         //     </select>
-//         //     <br>
-//         //   Enter question:<input type="text" id="question" value="`+x.question+`"required><br>
-//         //   Option A:<input type="text" id="a" value="`+optionList[0]+`"required><br>
-//         //   Option B:<input type="text" id="b" value="`+optionList[1]+`"required><br>
-//         //   Option C:<input type="text" id="c" value="`+optionList[2]+`"required><br>
-//         //   Option D:<input type="text" id="d" value="`+optionList[3]+`"required><br>
-//         //   Answer  <select name="answer" id="answer">
-//         //       <option value="a">A</option>
-//         //       <option value="b">B</option>
-//         //       <option value="c">C</option>
-//         //       <option value="d">D</option>
-//         //     </select>
-//         //   <br>
-//         //   <input type="submit" value="Add Question" onclick="onQuestionSubmit()">`);
-//         return x;
-//         }
-//     });
-//     return question;
-// }
 
 // Delete Question based on ID
 async function deleteQuestion(id) {
@@ -281,7 +249,7 @@ async function updateQuestion() {
         url: 'http://localhost:3000/questions/' + id,
         data: data,
         success: function(x) {
-          // alert(response);
+         
         },
       });
       location.reload();
@@ -297,7 +265,7 @@ async function updateQuestion() {
       url: 'http://localhost:3000/questions/' + id,
       data: data,
       success: function(x) {
-        // alert(response);
+       
       },
     });
     location.reload();
