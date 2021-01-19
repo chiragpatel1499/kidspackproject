@@ -1,0 +1,29 @@
+{
+  "name": "fet-mini-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "json-server": "json-server --watch ../db/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyurpkhant/FET-Mini-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyurpkhant/FET-Mini-1/issues"
+  },
+  "homepage": "https://github.com/keyurpkhant/FET-Mini-1#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
