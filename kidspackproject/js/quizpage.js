@@ -141,9 +141,9 @@ function showScores() {
     let label3 = '<label class="option radio btn" id="label3" for="option3">' + optionsForAnswer[2] + '</label><br>';
     let label4 = '<label class="option radio btn" id="label4" for="option4">' + optionsForAnswer[3] + '</label><br></div>';
     let que=n['question'];
-    if (que.length>50) {
-      que= que.substring(0, 50)+'<br>'+que.substring(50);
-    }
+    // if (que.length>50) {
+    //   que= que.substring(0, 50)+'<br>'+que.substring(50);
+    // }
     const questionAnswerShow = '<h4 class="card-subtitle mb-2 text-muted" id="question">' + (i + 1) + ' . ' + que + '</h4><br><div class="container" role="group" aria-label="Basic radio toggle button group">';
 
 
@@ -288,7 +288,7 @@ $(document).ready(async function() {
     scoreArray[i] = 0;
   }
   quiz = new Quiz(scoreArray, questions, 0);
-  const quizTime = 30 * quiz.questions.length; const display = $('#time');
+  const quizTime = 15 * quiz.questions.length; const display = $('#time');
   startTimer(quizTime, display);
   displayQuiz();
 });
@@ -315,7 +315,7 @@ function startTimer(duration, display) {
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
     display.text(minutes + ':' + seconds);
-    if (timer <= 30) {
+    if (timer <= 60) {
       $('#time').css('color', 'red');
     }
     if (--timer < 0) {
